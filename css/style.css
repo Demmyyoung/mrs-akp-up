@@ -1,0 +1,88 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(34, 129, 82) ;
+    max-height: 100%;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    color: peachpuff;
+    max-height: fit-content;
+    padding-bottom: 0px;
+    padding-top: 0px;    
+    
+        
+      
+}
+
+  
+
+.slideshow-container {
+    width: 50%;
+    margin-right: 2rem;
+    padding-top: 30px;
+}
+
+.slideshow-container img {
+    max-width: 80vh;
+    height: 90vh;
+}
+
+.content-container {
+    width: 50%;
+    background-color: rgb(34, 129, 82);
+    padding-top: 10px;
+    
+}
+.animated-text {
+    font-size: 3em;  /* Adjust the font size as desired */
+  }
+  
+  @keyframes color-change {
+    from { color: blue; }
+    to { color: red; }
+  }
+  
+  .animated-text {
+    animation: color-change 2s infinite alternate;
+  }
+  
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+   font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color:peachpuff;
+    color:  rgb(34, 129, 82);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: rgb(34, 129, 82);
+    color: peachpuff;
+    transition: 0.5s;
+}

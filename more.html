@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="./css/more.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+ 
+  <p>
+    I am a professional Counsellor, Commonwealth Scholar of Dementia
+    Studies, and a nominee of She Leads Africa (SLA)’s Top 50 Rising
+    Motherland Mogul of 2023 in Social Impact.
+  </p>
+  </header>
+  <section class="about visible" id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <ul>
+        <li>
+          <p>
+           <strong> My mission </strong>is to empower young people, helping them overcome obstacles,
+            find their purpose, and navigate life's transitions. You'll discover
+            your inner strength, achieve your goals, and lead a fulfilling life with
+            me.
+          </p>
+        </li>
+        <li>
+          <strong>School and Mental Health Counselling:</strong> As a School
+          and Mental Health Counsellor, I'm dedicated to creating an
+          environment where students, educators, and parents thrive. I'm your
+          partner in success, specializing in academic guidance, family
+          counselling, stress management, and mental health support
+          (challenges associated with personal relationships, depression, and
+          emotional distress). I'm also available for school counseling
+          consultation, helping institutions establish modern, comprehensive
+          School Counseling departments. I have worked with diverse student
+          populations (K-12 and tertiary students). I am a British-certified
+          Counsellor/Education Agent and member of the American Psychological
+          Association (APA) and Counselling Association of Nigeria (CASSON).
+        </li>
+        <li>
+          <strong>Career Counselling:</strong> Let's chat if you're on the
+          hunt for a career that truly resonates with your passions, or if
+          you're at a crossroads! I'm here to guide you on your path, to help
+          you define your career dreams, assess your personality, and align it
+          with your career choice. Let’s walk you through that path with
+          fulfillment.
+        </li>
+        <li>
+          <strong>Dementia Care Support:</strong> I hold a special place in my
+          heart for those living and dealing with dementia. As a Dementia Care
+          Practitioner, I'm here to assist families and caregivers with
+          knowledge, global best practices, and empathy as you navigate this
+          challenging journey. Reach out and let's craft a plan tailored just
+          for you. Together, we will explore personalized solutions that meet
+          your unique needs. Your dreams are unique, and I'm here to help you
+          bring them to life.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="blog hidden" id="blog">
+    <h2>Blog</h2>
+    <p>Read our latest articles and updates.</p>
+  </section>
+  <section class="contact hidden" id="contact">
+    <h2>Contact</h2>
+    <p>Contact me at:</p>
+    <p>
+      Email: <a href="mailto:udyakpan52@gmail.com">udyakpan52@gmail.com</a>
+    </p>
+    <p>Phone: <a href="tel:+2349061935336">+234 906 193 5336</a></p>
+    <p>
+      Contact Form:
+      <a href="https://forms.gle/seQAgEvLnzDba8Lj6" target="_blank">https://forms.gle/seQAgEvLnzDba8Lj6</a>
+    </p>
+    <p>Your emotions are valid, and I care about your well-being.</p>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function addVisibleClass() {
+        sections.forEach((section) => {
+          if (isInViewport(section)) {
+            section.classList.add("visible");
+            section.classList.remove("hidden");
+          }
+        });
+      }
+
+      document.addEventListener("scroll", addVisibleClass);
+      addVisibleClass(); // Call it once to check when the page loads
+    });
+  </script>
+</body>
+
+</html>
