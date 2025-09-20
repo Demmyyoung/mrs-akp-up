@@ -8,14 +8,14 @@ body {
 h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
-   font-weight: bold;
-    text-color: peachpuff;
-    text-align:center;
+    font-weight: bold;
+    color: peachpuff; /* ✅ Corrected */
+    text-align: center;
 }
 
-a{
+a {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    text-color: peachpuff;
-    text-align:center;
+    color: peachpuff; /* ✅ Corrected */
+    text-align: center;
 }
