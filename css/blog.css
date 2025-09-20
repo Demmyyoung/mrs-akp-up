@@ -13,7 +13,7 @@ h1 {
     text-align: center;
 }
 
-a {
+p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: peachpuff; /* ✅ Corrected */
