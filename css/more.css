@@ -1,16 +1,28 @@
-/* Add a class to control visibility */
+/* Sunshine corner glow */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 218, 185, 0.5), transparent 70%);
+  z-index: -1;
+}
+
+/* Visibility animation */
 .hidden {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Add a class to trigger visibility */
 .visible {
   opacity: 1;
-  transform: translateY(1s);
+  transform: translateY(0);
 }
 
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -18,8 +30,10 @@ body {
   padding: 0;
   background-color: rgb(34, 129, 82);
   color: peachpuff;
+  position: relative;
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -50,6 +64,7 @@ nav ul li a:hover {
   color: rgb(34, 129, 82);
 }
 
+/* Hero section */
 header.hero {
   text-align: center;
   padding: 100px 20px;
@@ -57,6 +72,7 @@ header.hero {
   color: peachpuff;
 }
 
+/* Section styling */
 section {
   padding: 60px 20px;
   text-align: center;
@@ -66,6 +82,7 @@ section h2 {
   margin-bottom: 20px;
 }
 
+/* About content */
 .about-content {
   text-align: left;
   margin: 0 auto;
@@ -81,6 +98,7 @@ section h2 {
   margin-bottom: 20px;
 }
 
+/* Contact links */
 .contact a {
   color: peachpuff;
   text-decoration: underline;
