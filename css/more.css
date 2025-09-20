@@ -64,6 +64,11 @@ nav ul li a:hover {
   color: rgb(34, 129, 82);
 }
 
+blog-hidden{
+   text-decoration: none;
+  color: peachpuff;
+}
+
 /* Hero section */
 header.hero {
   text-align: center;
