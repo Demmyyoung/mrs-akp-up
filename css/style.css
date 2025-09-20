@@ -1,88 +1,100 @@
-/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color:rgb(34, 129, 82) ;
-    max-height: 100%;
-    
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 129, 82);
+  color: peachpuff;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: flex;
-    color: peachpuff;
-    max-height: fit-content;
-    padding-bottom: 0px;
-    padding-top: 0px;    
-    
-        
-      
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-  
-
 .slideshow-container {
-    width: 50%;
-    margin-right: 2rem;
-    padding-top: 30px;
+  width: 50%;
+  padding: 30px 1rem 0 0;
 }
 
 .slideshow-container img {
-    max-width: 80vh;
-    height: 90vh;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
 }
 
 .content-container {
-    width: 50%;
-    background-color: rgb(34, 129, 82);
-    padding-top: 10px;
-    
+  width: 50%;
+  padding: 10px 1rem;
+  background-color: rgb(34, 129, 82);
 }
+
 .animated-text {
-    font-size: 3em;  /* Adjust the font size as desired */
-  }
-  
-  @keyframes color-change {
-    from { color: blue; }
-    to { color: red; }
-  }
-  
-  .animated-text {
-    animation: color-change 2s infinite alternate;
-  }
-  
+  font-size: 3em;
+  animation: color-change 2s infinite alternate;
+}
+
+@keyframes color-change {
+  from { color: blue; }
+  to { color: red; }
+}
 
 h1 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-   font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .cta-button {
-    display: inline-block;
-    background-color:peachpuff;
-    color:  rgb(34, 129, 82);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  display: inline-block;
+  background-color: peachpuff;
+  color: rgb(34, 129, 82);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .cta-button:hover {
-    background-color: rgb(34, 129, 82);
-    color: peachpuff;
-    transition: 0.5s;
+  background-color: rgb(34, 129, 82);
+  color: peachpuff;
+  transition: 0.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .slideshow-container,
+  .content-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .animated-text {
+    font-size: 2em;
+  }
 }
