@@ -42,17 +42,7 @@ body {
     padding-top: 10px;
     
 }
-.animated-text {
-    font-size: 3em;  /* Adjust the font size as desired */
-  }
-  
-  @keyframes color-change {
-    from { color: blue; }
-    to { color: red; }
-  }
-  
-
-  
+   
 
 h1 {
     font-size: 5rem;
